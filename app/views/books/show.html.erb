@@ -1,0 +1,13 @@
+
+<div class="Show-Book"><span>Title:</span><%= @book.title %></div>
+<div class="Show-Book"><span>Body:</span><%= @book.body %></h3>
+
+<div class="link-box">
+　<p class="link">
+    <%= link_to "Edit", edit_book_path(@book.id) %>
+  </p>
+  <p class="link">|</p>
+  <p class="link">
+    <%= link_to "Back", books_path%>
+  </p>
+</div>
