@@ -23,6 +23,7 @@
 <footer>
 	<h2>New book</h2>
  　　<% if @book.errors.any? %>
+    <p> error prohibited this book from being saved:</p>
         <ul>
           <% @book.errors.full_messages.each do |message| %>
             <li><%= message %></li>
@@ -35,7 +36,7 @@
     <p>Body</p>
     <%=f.text_area :body%>
     <div class="form-botton">
-    <%= f.submit 'Creat Book'%>	
+    <%= f.submit 'Create Book'%>	
     </div>
     <% end %>
 </footer>

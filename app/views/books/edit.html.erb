@@ -3,6 +3,7 @@
 </div>
 
 <% if @book.errors.any? %>
+ <p> error prohibited this book from being saved:</p>
     <ul>
       <% @book.errors.full_messages.each do |message| %>
         <li><%= message %></li>
